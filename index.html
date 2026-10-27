@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharasi Group</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🌐 Pharasi Group</h1>
+    <p>Welcome to our community!</p>
+  </header>
+
+  <main>
+    <section id="joinPage" class="card">
+      <h2>Join Group</h2>
+      <p>No password required to join.</p>
+      <input id="joinName" placeholder="Enter your name">
+      <button id="joinBtn">Join Now</button>
+      <p id="joinMessage"></p>
+    </section>
+
+    <section class="card">
+      <h2>Group Members</h2>
+      <div id="publicMembers"></div>
+    </section>
+
+    <section id="loginPage" class="card">
+      <h2>🔐 Admin Login</h2>
+      <input id="adminPassword" type="password"
+             placeholder="Admin password">
+      <button id="loginBtn">Login as Admin</button>
+      <p id="loginMessage"></p>
+    </section>
+
+    <section id="adminPanel" class="card hidden">
+      <h2>👑 Admin Dashboard</h2>
+      <p>Owner: You</p>
+      <p>Admin: Bo Admin</p>
+
+      <h3>Manage Members</h3>
+      <div id="adminMembers"></div>
+
+      <button id="logoutBtn" class="danger">Logout</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
